@@ -1,0 +1,323 @@
+html {
+  zoom: 75%;
+}
+
+body {
+  margin: 0;
+  font-family: sans-serif;
+}
+
+h1,
+h2 {
+  margin-top: 0;
+}
+
+/* First section */
+
+.robot_title {
+  display: inline-block;
+  margin-left: 27.5%;
+  color: darkblue;
+}
+
+.company_logo {
+  width: 8%;
+  margin-right: 27.5%;
+  float: right;
+}
+
+.factory-section {
+  background-color: rgb(230, 240, 92);
+  width: 60vw;
+  margin: 0 auto 0 auto;
+  border: 2px solid black;
+}
+
+.slide-1-title {
+  display: inline-block;
+  border-bottom: 2px solid black;
+  border-right: 2px solid black;
+  padding: 10px 10px;
+}
+
+.content-wrapper {
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: space-around;
+  height: 300px;
+  padding: 20px 0 40px 15px;
+}
+
+.robot-container {
+  order: 0;
+  flex: 0 0 100%;
+  background-color: white;
+  border: 1px solid black;
+  width: 29%;
+}
+
+.paragraph-1 {
+  order: 1;
+  width: 65%;
+  height: 120px;
+}
+
+.paragraph-2 {
+  order: 2;
+  width: 60%;
+  height: 80px;
+}
+
+.paragraph-3 {
+  order: 3;
+  width: 55%;
+  height: 60px;
+}
+
+.good-luck-image {
+  width: 10%;
+  float: left;
+  padding-right: 3%;
+}
+
+.paragraph-1,
+.paragraph-2,
+.paragraph-3 {
+  background-color: white;
+  border: 1px solid black;
+}
+
+@keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.content-wrapper p {
+  text-align: left;
+  padding-right: 3%;
+  padding-left: 3%;
+}
+
+.paragraph-text-1 {
+  animation: fadein 1s forwards;
+  word-break: break-word;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  line-height: 19px;
+  max-height: 38px;
+}
+
+.paragraph-text-1:hover {
+  overflow: visible;
+}
+
+.paragraph-text-2 {
+  text-align: justify;
+  animation: fadein 3s forwards;
+  word-break: break-word;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  line-height: 19px;
+  max-height: 38px;
+}
+
+.paragraph-text-2:hover {
+  overflow: visible;
+}
+
+.paragraph-text-3 {
+  animation: fadein 5s forwards;
+}
+
+.bold-letter {
+  font-weight: bold;
+}
+
+.italic-word {
+  font-style: italic;
+}
+
+/* robot */
+
+.head,
+.left-eye,
+.right-eye,
+.mouth,
+.left-arm,
+.right-arm,
+.left-leg,
+.right-leg {
+  border: 1px solid black;
+  position: absolute;
+}
+
+.head {
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  left: 33%;
+  top: 17%;
+}
+
+.left-eye,
+.right-eye {
+  border-radius: 50%;
+  width: 10px;
+  height: 10px;
+  top: 17.6%;
+}
+
+.left-eye {
+  left: 33.5%;
+}
+
+.right-eye {
+  left: 34.5%;
+}
+
+/* talk animation */
+@keyframes talk {
+  from {
+    height: 5px;
+    width: 17px;
+  }
+  to {
+    height: 10px;
+    width: 15px;
+  }
+}
+
+.mouth {
+  animation: talk 1s infinite;
+  animation-delay: 2s;
+  border-radius: 80%;
+  height: 5px;
+  width: 17px;
+  top: 19.7%;
+  left: 33.8%;
+}
+
+.body {
+  position: absolute;
+  border-top: 100px solid red;
+  border-left: 25px solid transparent;
+  border-right: 25px solid transparent;
+  height: 0;
+  width: 50px;
+  left: 31.7%;
+  top: 22%;
+}
+
+.left-arm,
+.right-arm {
+  border-radius: 15%;
+  height: 85px;
+  width: 14px;
+  top: 23%;
+}
+
+.left-arm {
+  left: 31.3%;
+}
+
+.right-arm {
+  left: 36.3%;
+}
+
+.left-leg,
+.right-leg {
+  height: 55px;
+  width: 13px;
+  top: 31.5%;
+}
+
+.left-leg {
+  left: 33%;
+}
+
+.right-leg {
+  left: 34.6%;
+}
+
+.robot-name {
+  position: absolute;
+  top: 39%;
+  left: 28.9%;
+}
+
+/* section 2 */
+
+.new-robot-section {
+  background-color: rgb(176, 240, 92);
+  width: 60vw;
+  margin: 2% auto 0 auto;
+  border: 2px solid black;
+}
+
+.new-robot-title {
+  text-align: center;
+  border-bottom: 2px solid black;
+  padding: 1%;
+}
+
+.create-robot {
+  display: flex;
+  flex-flow: row wrap;
+}
+
+.robot-naming,
+.robot-types,
+.colors-to-pick,
+.options,
+.comment {
+  padding: 0 2%;
+}
+
+.type-menu {
+  width: 170px;
+  height: 30px;
+}
+
+.create-robot-name {
+  width: 170px;
+  height: 25px;
+}
+
+.color {
+  width: 85px;
+}
+
+.button {
+  padding: 0 2% 2% 2%;
+  flex: 0 0 100%;
+}
+
+.comment-area {
+  resize: none;
+  height: 50px;
+  width: 150px;
+}
+
+.button-1 {
+  width: 100px;
+  height: 30px;
+}
+
+.button-2 {
+  margin-left: 1%;
+  width: 150px;
+  height: 30px;
+}
+
+.empty-section {
+  height: 150px;
+  border-top: 2px solid black;
+}
